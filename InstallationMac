@@ -3,5 +3,6 @@ Install Here For Mac
 https://store.docker.com/editions/community/docker-ce-desktop-mac
 
 Install Bash Shell Completion
+
 brew install bash-completion
 https://docs.docker.com/docker-for-mac/#install-shell-completion
