@@ -1,0 +1,11 @@
+Start SonarQube
+
+./sonar.sh console
+
+Run Javascript Project
+
+sonar-scanner   -Dsonar.projectKey=JSSamples   -Dsonar.sources=.   -Dsonar.host.url=http://localhost:9000
+
+Run Android Project
+
+mvn sonar:sonar   -Dsonar.host.url=http://localhost:9000   -Dsonar.login=37fbe776f2e29857761ab90729525ea94411c50c
