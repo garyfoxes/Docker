@@ -1,6 +1,10 @@
 docker info
 docker version
 
-docker container run --publish 80:80 --detach nginx (Starts nginx server opens port 80 on your host and routes it to port 80 on your container)
+docker container run --publish 80:80 --detach --name webserver nginx (Starts nginx server opens port 80 on your host and routes it to port 80 on your container)
 docker container run --publish 80:80 nginx (Same as above but shows requests and logs)
+
+docker container ls -a
+docker container stop <containerName>/ID>
+docker container rm -f <conatinerName/ID> <containerName/ID>
 
