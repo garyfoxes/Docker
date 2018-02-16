@@ -8,3 +8,7 @@ docker container ls -a
 docker container stop <containerName>/ID>
 docker container rm -f <conatinerName/ID> <containerName/ID>
 
+docker rm -f $(docker ps -a -q)  (Stops All Containers)
+docker kill $(docker ps -q)       (Removes All Containers)
+docker rmi $(docker images -q)    (Removes All Images)
+
