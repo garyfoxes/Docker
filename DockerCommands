@@ -15,3 +15,7 @@ docker rmi $(docker images -q)    (Removes All Images)
 
 Run Shell Inside Container
 docker container exec -it db bash
+
+Get Port And I.P Of Container
+docker container port nginx
+docker container inspect --format '{{.NetworkSettings.IPAddress}}' nginx
