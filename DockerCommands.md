@@ -3,7 +3,7 @@ docker version
 
 **Create Container**
 
-docker container run --publish 80:80 --detach --name webserver nginx (Starts nginx server opens port 80 on your host and routes it to port 80 on your container)
+docker container run --publish 80:80 --detach --name webserver  --network myCustomNetwork nginx (Starts nginx server opens port 80 on your host and routes it to port 80 on your container and adds it to a custom network)
 
 docker container run --publish 80:80 nginx (Same as above but shows requests and logs)
 
