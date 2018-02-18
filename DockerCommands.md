@@ -14,7 +14,7 @@ docker container ls -a
   
 **Removing Images And Containers**
 
-docker container stop <containerName>/ID>
+docker container stop  <containerName>/ID>
   
 docker container rm -f <conatinerName/ID> <containerName/ID>
 
