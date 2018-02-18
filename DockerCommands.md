@@ -14,9 +14,9 @@ docker container ls -a
   
 **Removing Images And Containers**
 
-docker container stop  <containerName>/ID>
+docker container stop  containerName>/ID
   
-docker container rm -f <conatinerName/ID> <containerName/ID>
+docker container rm -f conatinerName/ID containerName/ID
 
 docker rm -f $(docker ps -a -q)  (Stops All Containers)
 
@@ -37,6 +37,6 @@ docker container inspect --format '{{.NetworkSettings.IPAddress}}' nginx
 **Network Commands**
 docker network ls
 
-docker network inspect <networkName>
+docker network inspect networkName
   
-docker network create <newNetworkName> 
+docker network create newNetworkName
