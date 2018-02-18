@@ -11,6 +11,9 @@ docker container run --publish 80:80 nginx (Same as above but shows requests and
 
 docker container run -d -p 3306:3306 --name db -e MYSQL_RANDOM_ROOT_PASSWORD=yes mysql 
 
+docker container run -d -it --name CentOS --network my_network centos:7 yum install curl && curl --version(when running centos/Ubuntu had to include the -it as well otherwise the container stopped straight away,this will print out version of curl before exiting)
+
+
 docker container ls -a
 
   
