@@ -11,7 +11,7 @@ docker container run --publish 80:80 nginx (Same as above but shows requests and
 
 docker container run -d -p 3306:3306 --name db -e MYSQL_RANDOM_ROOT_PASSWORD=yes mysql 
 
-docker container run -d -it --name CentOS --network my_network centos:7 yum install curl && curl --version(when running centos/Ubuntu had to include the -it as well otherwise the container stopped straight away,this will print out version of curl before exiting)
+docker container run -d -it --name CentOS --network my_network centos:7 yum install curl && curl --version(when running centos/Ubuntu had to include the -it as well otherwise the container stopped straight away,this will print out version of curl before exiting, if you want to go into a bash shell have just bash after the image)
 
 
 docker container ls -a
@@ -52,4 +52,13 @@ docker network create newNetworkName
 docker network connect newNetworkName nginx (Connects nginx container to your newNetwork as well as the existing default bridge network)
 
 docker network disconnect newNetworkName nginx
+
+**DNS-ALIAS**
+
+docker container run -d --net dude --net-alias search elasticsearch:2   (Can give 2 containers the same alias) 
+docker container run -d --net dude --net-alias search elasticsearch:2
+
+docker container run --rm --net dude alpine nslookup search *Note will stop container after running shell command
+
+docker container run --rm --net dude centos curl -s search:9200 *Note will stop container after running shell command
 
