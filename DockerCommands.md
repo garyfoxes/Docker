@@ -35,6 +35,7 @@ docker container port nginx
 docker container inspect --format '{{.NetworkSettings.IPAddress}}' nginx
 
 **Network Commands**
+
 docker network ls
 
 docker network inspect networkName
