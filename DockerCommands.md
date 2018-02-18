@@ -10,6 +10,7 @@ docker container ls -a
 
   
 **Removing Images And Containers**
+
 docker container stop <containerName>/ID>
 docker container rm -f <conatinerName/ID> <containerName/ID>
 docker rm -f $(docker ps -a -q)  (Stops All Containers)
@@ -21,6 +22,7 @@ docker rmi $(docker images -q)    (Removes All Images)
 docker container exec -it db bash
 
 **Get Port And I.P Of Container**
+
 docker container port nginx
 docker container inspect --format '{{.NetworkSettings.IPAddress}}' nginx
 
