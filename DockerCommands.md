@@ -2,6 +2,7 @@ docker info
 docker version
 
 docker login (will ask you to login to docker hub and then store it in your keychain)
+docker logout
 
 ### Recommended To Use Custom Networks which has automatic linking between containers, you can use the default bridge network but any container assigned to that network has to apply the --link when running.
 
