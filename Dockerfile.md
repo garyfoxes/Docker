@@ -10,7 +10,7 @@ Reason:
 if a line is changed at the top, the rest of the image in the dockerfile has to be rebuilt.
 Whereas if you change a line near the bottom, then most of the file will be cached when been re-built
 
-**Sample Dockerfile
+**Sample Dockerfile**
 
  - you should use the 'node' official image, with the alpine 6.x branch
 - this app listens on port 3000, but the container should launch on port 80
@@ -43,5 +43,6 @@ RUN pwd && ls -al
 CMD ["/sbin/tini", "node", "./bin/www"]
 
 
-**docker image build -t my_first_image .
-**docker container run -p 80:3000 my_first_image
+**docker image build -t my_first_image . **
+
+**docker container run -p 80:3000 my_first_image**
