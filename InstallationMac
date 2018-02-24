@@ -6,3 +6,6 @@ Install Bash Shell Completion
 
 brew install bash-completion
 https://docs.docker.com/docker-for-mac/#install-shell-completion
+
+Use pcat for syntax highlighting
+https://gist.github.com/BretFisher/6f688dde0122399efdca5a9d26100437
