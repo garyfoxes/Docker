@@ -17,3 +17,16 @@ If you dont give a volume name, a new volume will be created each time you spin 
 **Note: On Mac and Windows you wont be able to cd to the host path where the volume is stored,because the path is created in a linux environment behind the scenes. If your host is a linux server then you will be able to cd to that directory**
 
 docker volume ls
+
+
+**Bind Mounting**
+
+Maps contents to 2 different folders 1 folder on host 1 on container
+
+Example in docker-file-sample-2 in Udemy course 
+1. cd into docker-file-sample-2 folder
+2. run 'docker container run -d --name nginx -p 80:80 -v $(pwd):/usr/share/nginx/html nginx' (this will copy everything pwd and put it in the usr/share/nginx/html)
+3. if you create a txt file on the host within the docker-file-sample-2 folder it will also be created on the container
+4. Create file 'touch testme.txt'
+5. ssh into container docker container exec -it nginx bash
+6.cd into /usr/share/nginx/html and you will see the testme.txt file
