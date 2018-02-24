@@ -43,6 +43,6 @@ RUN pwd && ls -al
 CMD ["/sbin/tini", "node", "./bin/www"]
 
 
-**docker image build -t my_first_image . **
+**docker image build -t my_first_image .**
 
 **docker container run -p 80:3000 my_first_image**
