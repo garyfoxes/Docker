@@ -26,24 +26,40 @@ networks: # Optional, same as docker network create
 **Example 2 Docker Compose File**
 
 version: "3"
+
 services:
   web:
+  
     # replace username/repo:tag with your name and image details
+    
     image: username/repo:tag
+    
     deploy:
+    
       replicas: 5
+      
       resources:
+      
         limits:
+        
           cpus: "0.1"
+          
           memory: 50M
+          
       restart_policy:
+      
         condition: on-failure
     ports:
+    
       - "80:80"
+      
     networks:
+    
       - webnet
 networks:
+
   webnet:
+  
 This docker-compose.yml file tells Docker to do the following:
 
 Pull the image we uploaded in step 2 from the registry.
