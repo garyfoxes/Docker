@@ -1,5 +1,5 @@
 
-https://docs.docker.com/compose/compose-file/
+https://docs.docker.com/compose/compose-file/ (very good documentation here)
 
 ### Ideal for local development and test
 
