@@ -2,7 +2,9 @@
 ### Ideal for local development and test
 
 docker-compose --help
+
 docker-compose.yml is the default filename but any filename can be used once its a .yml file e.g 
+
 docker-compose -f <yaml filename>
   
 **Sample Docker Compose File**
