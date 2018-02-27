@@ -23,22 +23,6 @@ volumes: # Optional, same as docker volume create
 
 networks: # Optional, same as docker network create
 
-**Example 2 Docker Compose File**
-
-
   
-This docker-compose.yml file tells Docker to do the following:
-
-Pull the image we uploaded in step 2 from the registry.
-
-Run 5 instances of that image as a service called web, limiting each one to use, at most, 10% of the CPU (across all cores), and 50MB of RAM.
-
-Immediately restart containers if one fails.
-
-Map port 80 on the host to web’s port 80.
-
-Instruct web’s containers to share port 80 via a load-balanced network called webnet. (Internally, the containers themselves publish to web’s port 80 at an ephemeral port.)
-
-Define the webnet network with the default settings (which is a load-balanced overlay network).
 
 **Good Example Here Also https://github.com/dockersamples/example-voting-app/blob/master/docker-compose.yml**
