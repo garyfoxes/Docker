@@ -9,3 +9,13 @@ https://docs.docker.com/docker-for-mac/#install-shell-completion
 
 Use pcat for syntax highlighting
 https://gist.github.com/BretFisher/6f688dde0122399efdca5a9d26100437
+
+For highlighting pwd 
+Add this to bash_profile 
+
+export PS1="\[\033[38;5;12m\]\h@\u\[$(tput sgr0)\]\[\033[38;5;15m\]:\[$(tput sgr0)\]\[\033[38;5;12m\]\W\[$(tput sgr0)\]\[\033[38;5;15m\]: \[$(tput sgr0)\]"
+
+Or customize here 
+
+http://bashrcgenerator.com/
+
