@@ -1,5 +1,5 @@
 
-### H3 Ideal for local development and test
+### Ideal for local development and test
 
 docker-compose --help
 docker-compose.yml is the default filename but any filename can be used once its a .yml file e.g 
