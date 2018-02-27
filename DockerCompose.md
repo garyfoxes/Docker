@@ -6,6 +6,10 @@ docker-compose --help
 docker-compose.yml is the default filename but any filename can be used once its a .yml file e.g 
 
 docker-compose -f <yaml filename>
+ 
+docker-compose up (run compose file)
+
+docker-compose down (remove containers)
   
 **Sample Docker Compose File**
 
