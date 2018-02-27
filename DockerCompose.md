@@ -1,4 +1,6 @@
 
+https://docs.docker.com/compose/compose-file/
+
 ### Ideal for local development and test
 
 docker-compose --help
@@ -7,9 +9,12 @@ docker-compose.yml is the default filename but any filename can be used once its
 
 docker-compose -f <yaml filename>
  
-docker-compose up (run compose file)
+docker-compose up  -d (run compose file in backgroud)
 
 docker-compose down (remove containers)
+
+docker-compose logs (inspect logs)
+
   
 **Sample Docker Compose File**
 
