@@ -1,0 +1,31 @@
+version: '3.5'
+services:
+  firefox:
+    image: selenium/node-firefox:3.9.1-actinium
+    depends_on:
+      - hub
+    environment:
+      HUB_HOST: hub
+    build:
+      context: .
+      shm_size: '2gb'
+
+  chrome:
+    image: selenium/node-chrome:3.9.1-actinium
+    depends_on:
+      - hub
+    environment:
+      HUB_HOST: hub
+      SCREEN_HEIGHT: 1080
+      SCREEN_WIDTH: 1920
+      SCREEN_DEPTH: 24
+      NODE_MAX_INSTANCES: 3
+      NODE_MAX_SESSION: 3
+    build:
+      context: .
+      shm_size: '2gb'
+
+  hub:
+    image: selenium/hub:3.9.1-actinium
+    ports:
+      - "4444:4444"
