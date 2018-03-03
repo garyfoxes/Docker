@@ -16,9 +16,9 @@ N.B* Services store containers
 
 docker service create alpine ping 8.8.8.8 (Creates a service with the alpine image)
 
-docker service ps <serviceName>  (Information about the service)
+docker service ps serviceName (Information about the service)
 
-docker service update <serviceName> --replicas 3  (Update the number of nodes with alpine to 3)
+docker service update serviceName --replicas 3  (Update the number of nodes with alpine to 3)
 
 
 
