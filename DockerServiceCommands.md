@@ -12,7 +12,7 @@ docker node ls (list available nodes)
 
 **Docker Service**
 
-N.B* Services store containers
+N.B* Service store containers
 
 docker service create alpine ping 8.8.8.8 (Creates a service with the alpine image)
 
