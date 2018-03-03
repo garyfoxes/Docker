@@ -1,6 +1,10 @@
 
 Use --help for list of commands
 
+https://labs.play-with-docker.com (for creating swarms,sessions only last 4 hrs)
+
+https://get.docker.com/ (If setting up docker on machine can install via here)
+
 **Docker Service Is Used To Replace The Docker Run Command**
 
 
