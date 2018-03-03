@@ -20,5 +20,7 @@ docker service ps serviceName (Information about the service)
 
 docker service update serviceName --replicas 3  (Update the number of nodes with alpine to 3, if one of the containers goes down the service will recreate another container)
 
+docker service rm serviceName (Will remove service and all containers within that service)
+
 
 
