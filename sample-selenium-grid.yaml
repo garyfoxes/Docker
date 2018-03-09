@@ -1,17 +1,10 @@
 version: '3.5'
 services:
   firefox:
+    container_name: firefox_node
     image: selenium/node-firefox:3.9.1-actinium
-    depends_on:
-      - hub
-    environment:
-      HUB_HOST: hub
-    build:
-      context: .
-      shm_size: '2gb'
-
-  chrome:
-    image: selenium/node-chrome:3.9.1-actinium
+    volumes:
+      - "/dev/shm:/dev/shm"
     depends_on:
       - hub
     environment:
@@ -21,11 +14,32 @@ services:
       SCREEN_DEPTH: 24
       NODE_MAX_INSTANCES: 3
       NODE_MAX_SESSION: 3
-    build:
-      context: .
-      shm_size: '2gb'
+      HUB_PORT_4444_TCP_ADDR: hub
+      HUB_PORT_4444_TCP_PORT: 4444
 
+  chrome:
+    container_name: chrome_node
+    image: selenium/node-chrome:3.9.1-actinium
+    volumes:
+      - "/dev/shm:/dev/shm"
+    depends_on:
+      - hub
+    environment:
+      HUB_HOST: hub
+      SCREEN_HEIGHT: 1080
+      SCREEN_WIDTH: 1920
+      SCREEN_DEPTH: 24
+      NODE_MAX_INSTANCES: 3
+      NODE_MAX_SESSION: 3
+      HUB_PORT_4444_TCP_ADDR: hub
+      HUB_PORT_4444_TCP_PORT: 4444
   hub:
+    container_name: hub
     image: selenium/hub:3.9.1-actinium
+    volumes:
+      - "/dev/shm:/dev/shm"
+    privileged: true
     ports:
       - "4444:4444"
+    expose:
+      - "4444"
