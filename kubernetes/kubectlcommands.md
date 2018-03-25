@@ -11,6 +11,9 @@ minikube service hello-minikube --url (gets url of container)
 export NODE_PORT=$(kubectl get services/kubernetes-bootcamp -o go-template='{{(index .spec.ports 0).nodePort}}')
 echo NODE_PORT=$NODE_PORT
 
+export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')
+echo Name of the Pod: $POD_NAME
+
 kubectl describe deployments hello-minikube (get info on container)
 
 kubectl delete deployments --all (delete all deploymenets)
