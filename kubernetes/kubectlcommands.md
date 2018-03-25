@@ -2,6 +2,8 @@ kubectl run hello-minikube --image=gcr.io/google_containers/echoserver:1.4 --por
 
 kubectl expose deployment hello-minikube --type=NodePort --port=8080 --name=my-service(exposes container on host machine)
 
+minikube status (get status of cluster)
+
 minikube stop (Stops cluster)
 
 minikube service hello-minikube --url (gets url of container)
