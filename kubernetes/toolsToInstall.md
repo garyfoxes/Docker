@@ -10,7 +10,11 @@
  
  https://storage.googleapis.com/kubernetes-release/release/v1.6.1/bin/linux/amd64/kubectl (linux)
  
- https://github.com/kubernetes/minikube/releases 
+ **Minikube**
+ 
+ brew cask install minikube (mac)
+ 
+ curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/ (linux)
  
  **List Of Helpful Resources Here**
  
