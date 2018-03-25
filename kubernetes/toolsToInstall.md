@@ -1,6 +1,7 @@
 **KUBECTL**
 
  https://storage.googleapis.com/kubernetes-release/release/v1.6.1/bin/darwin/amd64/kubectl (mac)
+ 
  curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/darwin/amd64/kubectl (latest stable version)
  
  https://storage.googleapis.com/kubernetes-release/release/v1.6.1/bin/linux/amd64/kubectl (linux)
