@@ -61,6 +61,8 @@ Go To VPC -> Security Groups -> Master Node -> Inbound Rules -> Add
 
 Add 0.0.0.0/0 to allow everyone access 
 
+Do for nodes as well.
+
 
 
 
