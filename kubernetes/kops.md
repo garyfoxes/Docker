@@ -44,6 +44,22 @@ list nodes: kubectl get nodes --show-labels
 
 ssh to the master: ssh -i ~/.ssh/id_rsa admin@api.kubernetes.newtech.academy.k8s.local
 
+**Run Container In AWS*
+
+kubectl run hello-minikube --image=gcr.io/google_containers/echoserver:1.4 --port=8080
+
+kubectl expose deployment hello-minikube --port=8080 --type="NodePort"
+
+kubectl get service (This will expose the port to access)
+
+**Open Firewall In AWS*
+
+Go To VPC -> Security Groups -> Master Node -> Inbound Rules -> Add
+
+Add 0.0.0.0/0 to allow everyone access 
+
+
+
 
 
 
