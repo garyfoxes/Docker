@@ -34,6 +34,16 @@ kops edit cluster kubernetes.newtech.academy.k8s.local --state=s3://kops-state-1
 
 kops update cluster kubernetes.newtech.academy.k8s.local --yes --state=s3://kops-state-1985
 
+Config wrote to ~/.kube/config (In this config is the username and password to login to)
+
+**Extra Commands**
+
+validate cluster: kops validate cluster
+
+list nodes: kubectl get nodes --show-labels
+
+ssh to the master: ssh -i ~/.ssh/id_rsa admin@api.kubernetes.newtech.academy.k8s.local
+
 
 
 
