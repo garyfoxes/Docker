@@ -29,6 +29,10 @@ http://www.cloudping.info/ (See what the closest AWS region is to you)
 
 If you are using Kops 1.6.2 or later, then DNS configuration is optional. Instead, a gossip-based cluster can be easily created. The only requirement to trigger this is to have the cluster name end with .k8s.local. 
 
+**SSH Key**
+
+Create ssh key for accessing your cluster
+
 
 
 
