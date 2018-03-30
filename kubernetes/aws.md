@@ -21,4 +21,16 @@ ls -ahl ~/.aws/ (To see credentials files and where passwords are setup)
 
 Similar to Google Drive
 
+Create new bucket e.g kops-state-1985 (End with unique characters so it is unique fo the region)
+
+http://www.cloudping.info/ (See what the closest AWS region is to you)
+
+**DNS**
+
+If you are using Kops 1.6.2 or later, then DNS configuration is optional. Instead, a gossip-based cluster can be easily created. The only requirement to trigger this is to have the cluster name end with .k8s.local. 
+
+
+
+
+
 
