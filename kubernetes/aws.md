@@ -17,7 +17,7 @@ aws configure (Enter ID and key)
 ls -ahl ~/.aws/ (To see credentials files and where passwords are setup)
 
 
-**S3 BUCKET**
+**S3 BUCKET (Can create using aws command line tool)**
 
 Similar to Google Drive
 
@@ -25,7 +25,7 @@ Create new bucket e.g kops-state-1985 (End with unique characters so it is uniqu
 
 http://www.cloudping.info/ (See what the closest AWS region is to you)
 
-**DNS**
+**DNS (Can create using aws command line tool)**
 
 If you are using Kops 1.6.2 or later, then DNS configuration is optional. Instead, a gossip-based cluster can be easily created. The only requirement to trigger this is to have the cluster name end with .k8s.local. 
 
