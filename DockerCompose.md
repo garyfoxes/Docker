@@ -15,6 +15,8 @@ docker-compose down (remove containers)
 
 docker-compose logs (inspect logs)
 
+docker-compose run run_tests protractor conf.js --params.browsers="chrome_regression" --specs="ui_tests/engine/desktop/specs/e2e_spec/*.js" --baseUrl="https://www.holidayautos.com" --params.environment="staging" --params.buildNumber="5.46.1--1712" --seleniumAddress="http://172.20.0.2:4444/wd/hub" 
+
   
 **Sample Docker Compose File**
 
