@@ -19,10 +19,12 @@ ls -ahl ~/.aws/ (To see credentials files and where passwords are setup)
 
 **S3 BUCKET (Can create using aws command line tool)**
 
-Create Bucket 
+Create Bucket
+
  aws s3api create-bucket --bucket gfox-test-automation --region eu-west-1 --create-bucket-configuration Loc ationConstraint=eu-west-1
  
- Delete Bucket
+Delete Bucket
+ 
 api delete-bucket --bucket gfox-test-automation --region eu-west-1 
 
 Similar to Google Drive
