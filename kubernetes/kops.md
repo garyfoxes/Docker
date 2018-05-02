@@ -21,9 +21,13 @@ kops create cluster --name=kubernetes.newtech.academy.k8s.local --state=s3://kop
 This actually uses the ssh key at the default location ~/.ssh/id_rsa_pub, pass the --ssh-public-key flag to the loaction of the public key you want to use.
 
 name - end cluster name with k8s.local if skipping DNS setup
+
 state - s3 name you setup
+
 zones - can see available zones in the ec2 home normally end with a,b or c
+
 node-count- number of nodes
+
 node-size - Instance size
 
 **Edit cluster configuration**
