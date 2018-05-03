@@ -18,6 +18,8 @@ sudo chown $(whoami):admin /usr/local/Frameworks
 
 kops create cluster --name=kubernetes.newtech.academy.k8s.local --state=s3://kops-state-1985 --zones=eu-west-1a --node-count=2 --node-size=t2.micro --master-size=t2.micro (Creates cluster configuration with 3 instances)
 
+**Make sure user has access to iam:GetInstanceProfile, iam:GetRole, iam:CreateRole,iam:CreateInstanceProfile **
+
 This actually uses the ssh key at the default location ~/.ssh/id_rsa_pub, pass the --ssh-public-key flag to the loaction of the public key you want to use.
 
 name - end cluster name with k8s.local if skipping DNS setup
