@@ -47,6 +47,8 @@ Config wrote to ~/.kube/config (In this config is the username and password to l
 
 validate cluster: kops validate cluster
 
+kops get gfox.k8s.local --state s3://gfox-test-automation  -o yaml (Get Full Cluster Setup)
+
 list nodes: kubectl get nodes --show-labels
 
 ssh to the master: ssh -i ~/.ssh/id_rsa admin@api.kubernetes.newtech.academy.k8s.local
