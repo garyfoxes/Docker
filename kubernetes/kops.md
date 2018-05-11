@@ -55,6 +55,8 @@ list nodes: kubectl get nodes --show-labels
 
 ssh to the master: ssh -i ~/.ssh/id_rsa admin@api.kubernetes.newtech.academy.k8s.local
 
+ssh -i ~/.ssh/id_rsa admin@api.gfox.k8s.local
+
 
 **Run Container In AWS**
 
