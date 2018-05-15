@@ -18,7 +18,21 @@ sudo chown $(whoami):admin /usr/local/Frameworks
 
 kops create cluster --name=kubernetes.newtech.academy.k8s.local --state=s3://kops-state-1985 --zones=eu-west-1a --node-count=2 --node-size=t2.micro --master-size=t2.micro (Creates cluster configuration with 3 instances)
 
-**Make sure user has access to iam:GetInstanceProfile, iam:GetRole, iam:CreateRole,iam:CreateInstanceProfile **
+**Make sure user has access to AmazonEC2FullAccess
+AmazonRoute53FullAccess
+AmazonS3FullAccess
+IAMFullAccess
+AmazonVPCFullAccess**
+
+**Also Give IAM Permissions To Access ECR Registry In AWS
+ecr:GetAuthorizationToken
+ecr:BatchCheckLayerAvailability
+ecr:GetDownloadUrlForLayer
+ecr:GetRepositoryPolicy
+ecr:DescribeRepositories
+ecr:ListImages
+ecr:BatchGetImage
+**
 
 This actually uses the ssh key at the default location ~/.ssh/id_rsa_pub, pass the --ssh-public-key flag to the loaction of the public key you want to use.
 
