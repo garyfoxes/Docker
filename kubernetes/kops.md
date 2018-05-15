@@ -31,8 +31,7 @@ ecr:GetDownloadUrlForLayer
 ecr:GetRepositoryPolicy
 ecr:DescribeRepositories
 ecr:ListImages
-ecr:BatchGetImage
-**
+ecr:BatchGetImage**
 
 This actually uses the ssh key at the default location ~/.ssh/id_rsa_pub, pass the --ssh-public-key flag to the loaction of the public key you want to use.
 
