@@ -85,7 +85,9 @@ kubectl expose deployment hello-world --type=LoadBalancer --name=my-service
 
 kubectl get services my-service
 
- kubectl delete deployment --all
+kubectl cluster-info dump
+
+kubectl delete deployment --all
  
  kubectl run selenium-grid --image=nexus.cartrawler.com:18444/selenium/selenium_hub 
 
