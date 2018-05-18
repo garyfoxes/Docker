@@ -16,6 +16,10 @@ aws configure (Enter ID and key)
 
 ls -ahl ~/.aws/ (To see credentials files and where passwords are setup)
 
+**GET LOGIN FOR AWS REPOSITORY**
+
+aws ecr get-login --no-include-email --region eu-west-1 (This will give you the command for the docker login)
+
 
 **S3 BUCKET (Can create using aws command line tool)**
 
