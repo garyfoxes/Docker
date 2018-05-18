@@ -20,6 +20,8 @@ ls -ahl ~/.aws/ (To see credentials files and where passwords are setup)
 
 aws ecr get-login --no-include-email --region eu-west-1 (This will give you the command for the docker login)
 
+docker push 532828054341.dkr.ecr.eu-west-1.amazonaws.com/selenium_hub:latest
+
 
 **S3 BUCKET (Can create using aws command line tool)**
 
