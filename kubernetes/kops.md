@@ -64,6 +64,8 @@ kops get gfox.k8s.local --state s3://gfox-test-automation  -o yaml (Get Full Clu
 
 kops edit ig nodes --state s3://gfox-test-automation (Get Instance Groups)
 
+kubectl cluster-info
+
 list nodes: kubectl get nodes --show-labels
 
 ssh to the master: ssh -i ~/.ssh/id_rsa admin@api.kubernetes.newtech.academy.k8s.local
