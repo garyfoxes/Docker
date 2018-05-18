@@ -81,6 +81,10 @@ kubectl expose deployment hello-minikube --port=8080 --type="NodePort"
 
 kubectl get service (This will expose the port to access)
 
+kubectl expose deployment hello-world --type=LoadBalancer --name=my-service
+
+kubectl get services my-service
+
  kubectl delete deployment --all
  
  kubectl run selenium-grid --image=nexus.cartrawler.com:18444/selenium/selenium_hub 
