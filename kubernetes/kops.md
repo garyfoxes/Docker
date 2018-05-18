@@ -58,7 +58,7 @@ Config wrote to ~/.kube/config (In this config is the username and password to l
 
 **Extra Commands**
 
-validate cluster: kops validate cluster
+validate cluster: kops validate cluster --state s3://gfox-test-automation
 
 kops get gfox.k8s.local --state s3://gfox-test-automation  -o yaml (Get Full Cluster Setup)
 
