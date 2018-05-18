@@ -80,6 +80,12 @@ kubectl expose deployment hello-minikube --port=8080 --type="NodePort"
 kubectl get service (This will expose the port to access)
 
  kubectl delete deployment --all
+ 
+ kubectl run selenium-grid --image=nexus.cartrawler.com:18444/selenium/selenium_hub 
+
+ kubectl create secret docker-registry regcred --docker-server=nexus.cartrawler.com:18444 --docker-username =development --docker-password=development --docker-email=gfox@cartrawler.com
+ 
+kubectl create -f selenium_grid.yaml
 
 
 **Open Firewall In AWS**
@@ -90,11 +96,6 @@ Add 0.0.0.0/0 to allow everyone access
 
 Do for nodes as well.
 
-kubectl run selenium-grid --image=nexus.cartrawler.com:18444/selenium/selenium_hub 
-
- kubectl create secret docker-registry regcred --docker-server=nexus.cartrawler.com:18444 --docker-username =development --docker-password=development --docker-email=gfox@cartrawler.com
- 
-kubectl create -f selenium_grid.yaml
 
 
 
