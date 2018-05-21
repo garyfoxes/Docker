@@ -73,6 +73,8 @@ ssh to the master: ssh -i ~/.ssh/id_rsa admin@api.kubernetes.newtech.academy.k8s
 ssh -i ~/.ssh/id_rsa admin@api.gfox.k8s.local
 
 
+
+
 **Run Container In AWS**
 
 kubectl run hello-minikube --image=gcr.io/google_containers/echoserver:1.4 --port=8080
@@ -94,6 +96,8 @@ kubectl delete deployment --all
  kubectl create secret docker-registry regcred --docker-server=nexus.cartrawler.com:18444 --docker-username =development --docker-password=development --docker-email=gfox@cartrawler.com
  
 kubectl create -f selenium_grid.yaml
+
+kubectl delete pod private-reg --now
 
 
 **Open Firewall In AWS**
