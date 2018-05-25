@@ -99,6 +99,8 @@ kubectl create -f selenium_grid.yaml
 
 kubectl delete pod private-reg --now
 
+kubectl exec -it <POD NAME> -c <CONTAINER NAME> bash (SSH to container)
+
 
 **Open Firewall In AWS**
 
