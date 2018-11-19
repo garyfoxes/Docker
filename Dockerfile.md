@@ -47,3 +47,12 @@ CMD ["/sbin/tini", "node", "./bin/www"]
 **docker image build -t my_first_image .**
 
 **docker container run -p 80:3000 my_first_image**
+
+
+**DOCKERFILE BEST PRACTICES**
+
+Alpine is good for testing purposes, very lightweight
+
+Image must start with a from command, either existing image or from scratch
+
+https://kapeli.com/cheat_sheets/Dockerfile.docset/Contents/Resources/Documents/index
