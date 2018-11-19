@@ -58,4 +58,5 @@ Image must start with a from command, either existing image or from scratch
 https://kapeli.com/cheat_sheets/Dockerfile.docset/Contents/Resources/Documents/index
 
 docker images -a (Will List Intermidiary Images As Full Image Is Been Built, This called the image cache)
-docker images --filter "dangling=true"
+
+docker images --filter "dangling=true" (Will show all dangling images)
